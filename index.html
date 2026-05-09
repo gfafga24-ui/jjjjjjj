@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You</title>
+</head>
+
+<body style="text-align:center; font-family:sans-serif; margin-top:100px;">
+
+<h2>write the first letter of my life ❤️</h2>
+
+<input type="password" id="pass">
+<button onclick="checkPass()">Open</button>
+
+<p id="message"></p>
+
+<script>
+function checkPass() {
+
+  var password = document.getElementById("pass").value;
+
+  if(password === "sa") {
+
+    document.body.innerHTML = `
+
+      <audio autoplay loop controls>
+        <source src="love.mp3" type="audio/mpeg">
+      </audio>
+
+      <h1>❤️</h1>
+
+      <h2>هاي الرسالة إلك</h2>
+
+      <p style="font-size:20px; width:70%; margin:auto; line-height:1.8;">
+
+      To my one and only ❤️
+      <br><br>
+
+      I want you to know that even when I’m busy in the coming days,
+      you’re still the thought that never leaves my mind.
+      Everything I do is just a path leading me to you 🤍
+
+      <br><br>
+
+      مرات بتطلع مني هاي الحركات 😂
+
+      </p>
+    `;
+
+  } else {
+
+    document.getElementById("message").innerText = "Wrong password 🤍";
+
+  }
+}
+</script>
+
+</body>
+</html>
